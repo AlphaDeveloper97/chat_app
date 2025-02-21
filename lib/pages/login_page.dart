@@ -1,4 +1,5 @@
 import 'package:chat_app/constants.dart';
+import 'package:chat_app/widgets/custom_button.dart';
 import 'package:chat_app/widgets/custom_text.dart';
 import 'package:chat_app/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +40,8 @@ class LoginPage extends StatelessWidget {
             CustomTextFormField(hintText: "Email"),
             SizedBox(height: 10),
             CustomTextFormField(hintText: "Password"),
+            SizedBox(height: 20),
+            CustomButton(),
           ],
         ),
       ),
