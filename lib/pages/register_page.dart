@@ -67,6 +67,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   password = value;
                 },
                 hintText: "Password",
+                obscureText: false,
               ),
               SizedBox(height: 20),
               CustomButton(onTap: () {}, text: "REGISTER"),

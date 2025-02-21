@@ -63,6 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                   password = value;
                 },
                 hintText: "Password",
+                obscureText: true,
               ),
               SizedBox(height: 20),
               CustomButton(onTap: () {}, text: "LOGIN"),
