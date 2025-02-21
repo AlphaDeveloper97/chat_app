@@ -1,19 +1,19 @@
 import 'package:chat_app/constants.dart';
-import 'package:chat_app/pages/register_page.dart';
+import 'package:chat_app/pages/login_page.dart';
 import 'package:chat_app/widgets/custom_button.dart';
 import 'package:chat_app/widgets/custom_text.dart';
 import 'package:chat_app/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
-  static String id = "login";
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
+  static String id = "register";
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<RegisterPage> createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _RegisterPageState extends State<RegisterPage> {
   String? email;
 
   String? password;
@@ -47,7 +47,11 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 90),
               const Row(
                 children: [
-                  CustomText(text: "LOGIN", fontSize: 27, color: Colors.white),
+                  CustomText(
+                    text: "REGISTER",
+                    fontSize: 27,
+                    color: Colors.white,
+                  ),
                 ],
               ),
               SizedBox(height: 8),
@@ -65,22 +69,22 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: "Password",
               ),
               SizedBox(height: 20),
-              CustomButton(onTap: () {}, text: "LOGIN"),
+              CustomButton(onTap: () {}, text: "REGISTER"),
               SizedBox(height: 8),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CustomText(
-                    text: "Don't have an account?   ",
+                    text: "Already have an account?   ",
                     color: Colors.white,
                     fontSize: 14,
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, RegisterPage.id);
+                      Navigator.pushNamed(context, LoginPage.id);
                     },
                     child: CustomText(
-                      text: "Register",
+                      text: "Login",
                       color: Colors.grey,
                       fontSize: 14,
                     ),
