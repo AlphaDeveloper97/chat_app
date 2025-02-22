@@ -19,7 +19,27 @@ class ChatPage extends StatelessWidget {
           ],
         ),
       ),
-      body: ChatBubble(),
+      body: ListView(
+        children: [
+          ChatBubble(
+            message: 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+          ),
+          ChatBubbleForFriend(
+            message:
+                'nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo',
+          ),
+          ChatBubble(
+            message:
+                'goggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg',
+          ),
+          ChatBubbleForFriend(
+            message:
+                'donnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn',
+          ),
+          ChatBubble(message: 'kkkkkkkkkkk'),
+          ChatBubbleForFriend(message: 'uuuuuuuuuu'),
+        ],
+      ),
     );
   }
 }
