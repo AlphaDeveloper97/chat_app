@@ -1,4 +1,5 @@
 import 'package:chat_app/constants.dart';
+import 'package:chat_app/widgets/chat_bubble.dart';
 import 'package:chat_app/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class ChatPage extends StatelessWidget {
           ],
         ),
       ),
-      body: ,
+      body: ChatBubble(),
     );
   }
 }
