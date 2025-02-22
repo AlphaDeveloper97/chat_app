@@ -13,6 +13,13 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: (data) {
+        if (data!.isEmpty) {
+          return 'value is required';
+        } else {
+          return '';
+        }
+      },
       obscureText: obscureText!,
       onChanged: onChanged,
       decoration: InputDecoration(
